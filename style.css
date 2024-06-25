@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0 0 40px 10px #FFFFFF1D;
+}
+
+.container-left {
+    display: flex;
+    position: relative;
+    right: 120px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+.container-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: 20px
+}
+
+input {
+    margin: 10px 0;
+    padding: 15px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.felix-logo {
+    margin-bottom: 50px;
+    width: 150px;
+    height: 80px;
+}
+
+button {
+    padding: 15px 20px;
+    margin-top: 40px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #414141;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  button:hover {
+    border-color: #08FF08;      /* CORD ANTERIOR #0974f1 */
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);          /* COR ANTERIOR rgba(9, 117, 241, 0.8) */
+  }
+  
+  button:active {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);        /* COR ANTERIOR rgba(9, 117, 241, 0.4) */
+  }
