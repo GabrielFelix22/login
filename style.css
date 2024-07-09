@@ -52,11 +52,12 @@ body {
 
 input {
     margin: 10px 0;
-    padding: 15px;
-    height: 35px;
+    padding: 18px;
+    height: 45px;
     border: none;
     border-radius: 20px;
     outline: none;
+    font-size: 18px;
 }
 
 .felix-logo {
